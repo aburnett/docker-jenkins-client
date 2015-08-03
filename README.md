@@ -1,7 +1,13 @@
-Jenkins image with the docker client installed for cases were you want to run docker commands from Jenkins but connect to a daemon running elsewhere. The docker daemon is *not* running inside of the container.
+Jenkins image with the docker client installed for cases were you want to run docker commands from Jenkins but connect to a daemon running elsewhere (for example the same daemon running this container). The docker daemon is *not* running inside of the container.
+
+# Tags
+
+`1.7` `latest` - Contains docker client 1.7
+
+`1.6` - Contains docker client 1.6.2
 
 # Usage
-## Using the same docker host as the container
+## Using a unix socket
 
     docker run -v /var/run/docker.sock:/var/run/docker.sock docker-jenkins-client
 
