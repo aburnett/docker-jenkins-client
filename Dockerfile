@@ -1,7 +1,7 @@
 FROM jenkins:latest
 MAINTAINER Adam Burnett <adam.burnett@dealer.com>
 
-ENV DOCKER_VERSION 1.6.2
+ENV DOCKER_VERSION 1.7.0
 ENV DOCKER_HOST unix:///var/run/docker.sock
 ENV DOCKER_OPTS ""
 
